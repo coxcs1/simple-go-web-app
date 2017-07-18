@@ -25,4 +25,4 @@ jobs:
   - put: resource-deploy-web-app
     params:
       manifest: resource-web-app/manifest.yml
-      path: resource-web-app
+      path: built-project/library-go-app
