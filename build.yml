@@ -1,0 +1,22 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: golang
+    tag: "latest"
+
+inputs:
+- name: source-code
+
+outputs:
+- name: built-project
+
+run:
+  path: sh
+  args:
+    - -exc
+    - |
+      export GOPATH=$PWD/resource-web-app
+      go build -o built-project/library-go-app https://github.com/coxcs1/simple-go-web-app
