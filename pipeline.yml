@@ -20,6 +20,8 @@ jobs:
   serial: true
   plan:
   - {get: resource-web-app, trigger: true}
+  - task: build
+    file: resource-web-app/build.yml
   - put: resource-deploy-web-app
     params:
       manifest: resource-web-app/manifest.yml
