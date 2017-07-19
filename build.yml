@@ -36,8 +36,5 @@ run:
       go get github.com/go-martini/martini
       go build main.go
       ls -lat
-      ls -lat | wc -l
-      cd ..
-      ls -lat
       cp main ../built-project
       echo ""
