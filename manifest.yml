@@ -4,7 +4,7 @@ applications:
   disk: 256M
   memory: 128M
   random-route: true
-  path: main
+  path: resource-web-app
   buildpack: go_buildpack
   env:
     GOPACKAGENAME: main
