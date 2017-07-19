@@ -36,4 +36,5 @@ run:
 
       # Put the binary filename in /built-project
       go build
-
+      ls -lat
+      echo ""
