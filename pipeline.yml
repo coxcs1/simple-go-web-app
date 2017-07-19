@@ -24,4 +24,4 @@ jobs:
   - put: resource-deploy-web-app
     params:
       manifest: resource-web-app/manifest.yml
-      path: built-project/resource-web-app/main.go
+      path: built-project
