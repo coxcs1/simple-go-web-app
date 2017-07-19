@@ -17,6 +17,7 @@ run:
   args:
     - -exc
     - |
+      go version
       echo "List whats in the current directory"
       ls -lat 
       echo ""
