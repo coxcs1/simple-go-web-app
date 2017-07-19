@@ -4,8 +4,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: ubuntu
-    tag: "latest"
+    repository: golang
 
 inputs:
 - name: resource-web-app
@@ -18,7 +17,6 @@ run:
   args:
     - -exc
     - |
-      apt-get install golang-go
       go version
       echo "List whats in the current directory"
       ls -lat 
@@ -39,4 +37,5 @@ run:
       go build
       ls -lat
       cp resource-web-app ../built-project
+      ls -lat ../built-project
       echo ""
