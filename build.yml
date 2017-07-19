@@ -39,5 +39,5 @@ run:
       ls -lat | wc -l
       cd ..
       ls -lat
-      cp resource-web-app ../built-project
+      cp main ../built-project
       echo ""
