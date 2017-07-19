@@ -56,4 +56,6 @@ run:
       # Check whats in /built-project
       echo "List whats in /built-project"
       ls -lat built-project
+      cd resource-web-app
+      ls -lat resource-web-app
       echo ""
