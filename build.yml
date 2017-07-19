@@ -36,4 +36,5 @@ run:
       go get github.com/go-martini/martini
       go build
       ls -lat
+      cp resource-web-app ../built-project
       echo ""
