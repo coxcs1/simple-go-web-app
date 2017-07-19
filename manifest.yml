@@ -1,7 +1,7 @@
 ---
 applications:
-- name: simple-go-web-app
+- name: main
   disk: 256M
   memory: 128M
   random-route: true
-  path: built-project/main
+  path: main
