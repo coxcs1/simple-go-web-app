@@ -33,8 +33,6 @@ run:
       echo "Gopath is: " $GOPATH
       echo "pwd is: " $PWD
       echo ""
-      cd src/github.com/coxcs1/resource-web-app
-
       # Put the binary filename in /built-project
       go build
       ls -lat
