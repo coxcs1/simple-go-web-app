@@ -27,8 +27,7 @@ run:
       pwd
       
       # Now we must move our code from the current directory ./resource-web-app to $GOPATHsrc/github.com/coxcs1/resource-web-app
-      mkdir -p src/github.com/coxcs1/
-      cp -R ./resource-web-app src/github.com/coxcs1/.
+      cd resource-web-app
       # All set and everything is in the right place for go
       echo "Gopath is: " $GOPATH
       echo "pwd is: " $PWD
