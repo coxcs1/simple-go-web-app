@@ -35,7 +35,7 @@ run:
       cd src/github.com/coxcs1/resource-web-app
 
       # Put the binary filename in /built-project
-      go build -o built-project/resource-web-app ./main.go
+      go build
 
 
       # Check
