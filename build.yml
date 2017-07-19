@@ -35,7 +35,6 @@ run:
       # Put the binary filename in /built-project
       go get github.com/go-martini/martini
       go build main.go
-      go install main
       ls -lat
-      cp main ../built-project
+      cp main $GOPATH
       echo ""
