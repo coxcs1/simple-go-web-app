@@ -35,7 +35,7 @@ run:
       # Put the binary filename in /built-project
       go get github.com/go-martini/martini
       go build
-      ls -lat
+      ls -l -X
       cp resource-web-app ../built-project
       ls -lat ../built-project
       echo ""
