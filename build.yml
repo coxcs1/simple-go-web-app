@@ -33,6 +33,7 @@ run:
       echo "pwd is: " $PWD
       echo ""
       # Put the binary filename in /built-project
+      go get github.com/go-martini/martini
       go build
       ls -lat
       echo ""
