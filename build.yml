@@ -18,5 +18,43 @@ run:
   args:
     - -exc
     - |
-      export GOPATH=$PWD/resource-web-app
-      go build -o built-project/library-go-app https://github.com/coxcs1/simple-go-web-app
+      echo "List whats in the current directory"
+      ls -lat 
+      echo ""
+      # Setup the gopath based on current directory.
+      export GOPATH=$PWD
+      echo $GOPATH;
+      pwd
+      
+      # Now we must move our code from the current directory ./resource-web-app to $GOPATH/src/github.com/brooklyyounce/resource-web-app
+      mkdir -p src/github.com/brooklyyounce/
+      cp -R ./resource-web-app src/github.com/brooklyyounce/.
+      # All set and everything is in the right place for go
+      echo "Gopath is: " $GOPATH
+      echo "pwd is: " $PWD
+      echo ""
+      cd src/github.com/brooklyyounce/resource-web-app
+
+      # Put the binary filename in /built-project
+      go build -o built-project/resource-web-app ./main.go
+
+
+      # Check
+      echo "List whats in the /built-project directory"
+      ls -lat built-project
+      echo ""
+
+      # Move what you need to $GOPATH/built-project
+      # BECAUSE the resource type docker-image works in /built-project.
+      cp -R ./built-project $GOPATH/.
+
+      cd $GOPATH
+      # Check whats here
+      echo "List whats in top directory"
+      ls -lat 
+      echo ""
+
+      # Check whats in /built-project
+      echo "List whats in /built-project"
+      ls -lat built-project
+      echo ""
