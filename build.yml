@@ -37,25 +37,3 @@ run:
       # Put the binary filename in /built-project
       go build
 
-
-      # Check
-      echo "List whats in the /built-project directory"
-      ls -lat built-project
-      echo ""
-
-      # Move what you need to $GOPATH/built-project
-      # BECAUSE the resource type docker-image works in /built-project.
-      cp -R ./built-project $GOPATH/.
-
-      cd $GOPATH
-      # Check whats here
-      echo "List whats in top directory"
-      ls -lat 
-      echo ""
-
-      # Check whats in /built-project
-      echo "List whats in /built-project"
-      ls -lat built-project
-      cd resource-web-app
-      ls -lat
-      echo ""
