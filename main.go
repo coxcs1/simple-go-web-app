@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	_"github.com/go-martini/martini"
+	"github.com/go-martini/martini"
 )
 
 func main() {
